@@ -1,1 +1,0 @@
-# ARPractica1
