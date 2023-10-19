@@ -1,56 +1,52 @@
 /* Reseemaos los margenes y rellenos */
-body{
-    margin: 0;
-    padding: 0 ;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-
-
 /*Creación de header*/
 header {
-    text-align: center ;
-    color: #da6732;
-    font-size: xx-large;
+  text-align: center;
+  color: #da6732;
+  font-size: xx-large;
 }
 header h1 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* Creación del menú de navegación*/
 nav {
-    text-align: center;
-    margin-bottom: 10px ;
+  text-align: center;
+  margin-bottom: 10px;
 }
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
-nav ul li { 
-    margin-bottom: 5px;
+nav ul li {
+  margin-bottom: 5px;
 }
 nav ul li a {
-    text-decoration: none;
-    color: initial;
-    transition: font-weight 0.2s ease-in-out;
+  text-decoration: none;
+  color: initial;
+  transition: font-weight 0.2s ease-in-out;
 }
 /*Resaltar enlaces al pasar el cursor por encima*/
-nav ul li a:hover{
-    font-weight: 600;
+nav ul li a:hover {
+  font-weight: 600;
 }
 
 /* Resaltar la página en la que estamos */
 nav ul li.current a {
-    font-weight:700 ;
-    font-style: italic;
-    
+  font-weight: 700;
+  font-style: italic;
 }
 /* Diseño del  footer */
 footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0; 
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
