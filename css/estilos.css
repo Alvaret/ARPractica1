@@ -4,19 +4,16 @@ body {
   padding: 0;
 }
 /*Creación de header*/
-header {
+header h1 {
   text-align: center;
   color: #da6732;
   font-size: xx-large;
-}
-header h1 {
   margin-bottom: 0px;
 }
 
 /* Creación del menú de navegación*/
 nav {
   text-align: center;
-  margin-bottom: 10px;
 }
 nav ul {
   list-style-type: none;
@@ -30,13 +27,14 @@ nav ul li a {
   color: initial;
   transition: font-weight 0.2s ease-in-out;
 }
+
 /*Resaltar enlaces al pasar el cursor por encima*/
 nav ul li a:hover {
   font-weight: 600;
 }
 
 /* Resaltar la página en la que estamos */
-nav ul li.current a {
+nav ul li.actual a {
   font-weight: 700;
   font-style: italic;
 }
@@ -50,3 +48,60 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* =============================== */
+
+/* Anchura modfiicada de los elementos container */
+
+.container {
+  width: 95%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Index */
+.centrar_medio {
+  text-align: center;
+}
+
+.centrar_izquierda{
+  text-align: left;
+}
+
+#texto_concesion {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.texto_separacion_lineas{
+  line-height: 1.5;
+}
+
+figure{
+  justify-content: center;
+}
+
+figure figcaption {
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+.texto_sin_subrayado {
+  text-decoration: none;
+
+}
+
+.texto_naranja{
+  color: #da6732;
+
+}
+
+.texto_negrita{
+  font-weight: bold;
+}
+
+#texto_rock{
+  margin-right: 52%;
+
+}
+
