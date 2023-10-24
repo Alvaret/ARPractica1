@@ -11,6 +11,14 @@ header h1 {
   margin-bottom: 0px;
 }
 
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(240, 93, 80);
+}
+header a:hover {
+  color: rgba(240, 93, 80, 0.5);
+}
+
 /* Creación del menú de navegación*/
 nav {
   text-align: center;
@@ -24,13 +32,13 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: initial;
-  transition: font-weight 0.2s ease-in-out;
+  color: rgb(0, 0, 25);
+  transition: color 0.1s ease-in-out;
 }
 
 /*Resaltar enlaces al pasar el cursor por encima*/
 nav ul li a:hover {
-  font-weight: 600;
+  color:  rgba(0, 0, 25, 0.5) ;
 }
 
 /* Resaltar la página en la que estamos */
@@ -40,16 +48,72 @@ nav ul li.actual a {
 }
 /* Diseño del  footer */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(0, 0, 25);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 15px 0;
-  position: fixed;
+
   bottom: 0;
   width: 100%;
 }
 
+footer a:hover {
+  color: rgb(240, 93, 80);
+}
+
+
+
+
+/*Formato del contenido principal */
+
+main{
+  font-family: Helvetica , Arial, sans-serif;
+
+}
+
+main p{
+  color: rgb(0, 0, 25);
+}
+
+blockquote , q {
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ol li  {
+  color: rgba(0, 0, 25, 0.5);
+}
+
+ul li time {
+  color: rgba(0, 0, 25, 0.5);
+}
+
+
+
+
+
+a{
+  color: rgb(240, 93, 80);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover{
+  color: rgba(240, 93, 80, 0.5);
+}
+
+
+
+
+
 /* =============================== */
+
+
+
+
+
+
+
 
 /* Anchura modfiicada de los elementos container */
 
@@ -62,9 +126,10 @@ footer {
 /* Index */
 .centrar_medio {
   text-align: center;
+  justify-content: center;
 }
 
-.centrar_izquierda{
+.centrar_izquierda {
   text-align: left;
 }
 
@@ -73,11 +138,11 @@ footer {
   margin: 0 auto;
 }
 
-.texto_separacion_lineas{
+.texto_separacion_lineas {
   line-height: 1.5;
 }
 
-figure{
+figure {
   justify-content: center;
 }
 
@@ -88,20 +153,75 @@ figure figcaption {
 
 .texto_sin_subrayado {
   text-decoration: none;
-
 }
 
-.texto_naranja{
+.texto_naranja {
   color: #da6732;
-
 }
 
-.texto_negrita{
+.texto_negrita {
   font-weight: bold;
 }
 
-#texto_rock{
+#texto_rock {
   margin-right: 52%;
+}
+
+.quitar_margin {
+  margin: 0;
+}
+
+#video {
+  width: 600px;
+  height: 340px;
+}
+
+.color_blanco {
+  color: rgb(255, 255, 255);
+}
+
+.texto_mayusculas{
+  text-transform: uppercase;
+}
+
+.texto_grande{
+  font-size: large;
 
 }
 
+.texto_chico{
+  font-size: small;
+}
+
+
+/* =================== */
+
+#listado_premios{
+  list-style: none;
+  padding-left: 25%;
+}
+
+#listado_premios li ul {
+  margin: 0;
+}
+
+
+
+#listado_premios li ul li {
+  list-style-type: square;
+  margin: 0.5em;
+  font-size: larger;
+}
+
+#listado_premios time{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#listado_premios h2{
+  margin: 0;
+}
+
+#consulta_premios{
+  margin: 3em;
+}
