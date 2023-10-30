@@ -21,7 +21,9 @@ header a:hover {
 
 /* Diseño del menú de navegación */
 nav {
+  margin-top: 2em;
   text-align: center;
+  margin-bottom: 5em;
 }
 nav ul {
   list-style-type: none;
@@ -49,17 +51,11 @@ footer {
   color: rgb(255, 255, 255);
   padding: 15px 0;
   min-height: 8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 6em;
   width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
-.footer_especial {
-  bottom: 0;
-  position: fixed;
-  flex-direction: column;
-}
+
 footer a:hover {
   color: rgb(240, 93, 80);
 }
@@ -71,6 +67,12 @@ main {
 main p {
   color: rgb(0, 0, 25);
   font-family: Helvetica, Arial, sans-serif;
+  font-size: large;
+  line-height: 1.75em;
+
+}
+main h2 {
+  font-size: 200%;
 }
 ol li, ul li  {
   color: rgba(0, 0, 25, 0.5);
@@ -83,6 +85,16 @@ a {
 a:hover {
   color: rgba(240, 93, 80, 0.5);
 }
+
+blockquote , cite {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+abbr {
+  text-decoration: none; /* Quitar el subrayado */
+  color: inherit; /* Usar el color heredado del texto circundante */
+}
+
 
 /* Clases predefinidas */
 .container {
@@ -97,7 +109,7 @@ a:hover {
   text-align: left;
 }
 .texto_separacion_lineas {
-  line-height: 1.5;
+  line-height: 2em;
 }
 .texto_sin_subrayado {
   text-decoration: none;
@@ -120,8 +132,26 @@ a:hover {
 .texto_grande {
   font-size: large;
 }
+.texto_muy_grande{
+  font-size: 300%;
+}
 .texto_chico {
   font-size: small;
+}
+.texto_cursiva{
+  font-style: italic;
+}
+
+.texto_quitar_negrita{
+  font-weight: 500;
+}
+
+.margin_inferior{
+  margin-bottom: 4em;
+}
+
+.margin_superior{
+  margin-top: 2em;
 }
 
 .contenido_centrado {
@@ -156,11 +186,13 @@ a:hover {
   margin: 3em;
 }
 #texto_rock {
-  margin-right: 52%;
+  margin-right: 20%;
+  font-size: x-large;
 }
 #texto_concesion {
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
+  font-size: 130%;
 }
 #listado_descriptivo dt {
   font-size: x-large;
@@ -176,4 +208,9 @@ a:hover {
 #listado_descriptivo dd {
   font-size: 120%;
   line-height: 2em;
+}
+
+#bob_figcaption{
+  margin-top: 1em;
+  font-style: italic;
 }
